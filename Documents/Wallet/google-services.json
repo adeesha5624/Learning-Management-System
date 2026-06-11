@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "330567308145",
+    "project_id": "my-wallet-32caa",
+    "storage_bucket": "my-wallet-32caa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330567308145:android:45301a036684c0948c5cd0",
+        "android_client_info": {
+          "package_name": "com.financial.my_wallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRsw_aNjdjHRb0QQGf5It_B5CkXLZkyXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+/* * Responsive Stylesheet
+ * Uses standard CSS and media queries for compliance, 
+ * but leverages Tailwind classes in PHP templates for modern responsiveness.
+ */
+
+/* 1. Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Responsive Layout Focus (using media queries as required) */
+.container {
+    width: 95%;
+    max-width: 1200px;
+}
+
+/* Hide admin button on mobile for navigation clarity, let Tailwind handle general responsiveness */
+@media (max-width: 768px) {
+    /* Basic example of hiding an element or adjusting layout for mobile if not using Tailwind fully */
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+/* 3. Form Styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: border-color 0.2s;
+}
+
+.form-input:focus {
+    border-color: #4f46e5; /* Tailwind indigo-600 */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+.error-message {
+    color: #ef4444; /* Tailwind red-500 */
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* 4. Event Card Styling */
+.event-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.event-card:hover {
+    transform: translateY(-2px);
+}
+
+/* 5. Event Card Color Variants (left border) */
+.event-card {
+    border-left-width: 8px; /* default left border width for color accent */
+}
+.card-indigo { border-left-color: #6366f1; }    /* indigo-500 */
+.card-green  { border-left-color: #10b981; }    /* green-500 */
+.card-yellow { border-left-color: #f59e0b; }    /* yellow-500 */
+.card-pink   { border-left-color: #ec4899; }    /* pink-500 */
+.card-purple { border-left-color: #8b5cf6; }    /* purple-500 */
+
+/* Optional small utility for card title color and link */
+.event-card .event-title { color: #111827; font-weight: 600; }
+.event-card .event-meta { color: #6b7280; }
+.event-card a.event-link { color: #374151; font-weight: 500; text-decoration: none; }
+.event-card a.event-link:hover { color: #111827; text-decoration: underline; }
